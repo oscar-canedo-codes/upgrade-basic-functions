@@ -139,3 +139,35 @@ const duplicates = [
   }
   
   finderName(nameFinder, "Peggy");
+
+  // Iteration 8
+
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+  ];
+ 
+  function repeatCounter(array) { 
+ 
+    let counter = []; 
+ 
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] in counter) {
+        counter[array[i]]++;
+      } else {
+        counter[array[i]] = 1;
+      }
+    }
+    return console.log(counter);
+  }
+  
+  repeatCounter(counterWords);
