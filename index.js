@@ -49,4 +49,21 @@ function sumArray(array) {
 }
 
 sumArray(numbers);
+
+// Iteration 4
+
+const nums = [12, 21, 38, 5, 45, 37, 6];
+
+function average(array) {
+
+    let sum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+    }
     
+return console.log(Math.round(sum / array.length));
+}
+
+average(nums);
+
